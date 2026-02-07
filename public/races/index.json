@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "australian-grand-prix",
+    "fileName": "australian-grand-prix.json",
+    "meeting_key": 1254,
+    "meeting_name": "Australian Grand Prix",
+    "location": "Melbourne",
+    "country_name": "Australia",
+    "circuit_short_name": "Melbourne",
+    "date_start": "2025-03-14T01:30:00+00:00",
+    "totalLaps": 58
+  },
+  {
+    "slug": "bahrain-grand-prix",
+    "fileName": "bahrain-grand-prix.json",
+    "meeting_key": 1257,
+    "meeting_name": "Bahrain Grand Prix",
+    "location": "Sakhir",
+    "country_name": "Bahrain",
+    "circuit_short_name": "Sakhir",
+    "date_start": "2025-04-11T11:30:00+00:00",
+    "totalLaps": 57
+  },
+  {
+    "slug": "chinese-grand-prix",
+    "fileName": "chinese-grand-prix.json",
+    "meeting_key": 1255,
+    "meeting_name": "Chinese Grand Prix",
+    "location": "Shanghai",
+    "country_name": "China",
+    "circuit_short_name": "Shanghai",
+    "date_start": "2025-03-21T03:30:00+00:00",
+    "totalLaps": 56
+  },
+  {
+    "slug": "emilia-romagna-grand-prix",
+    "fileName": "emilia-romagna-grand-prix.json",
+    "meeting_key": 1260,
+    "meeting_name": "Emilia Romagna Grand Prix",
+    "location": "Imola",
+    "country_name": "Italy",
+    "circuit_short_name": "Imola",
+    "date_start": "2025-05-16T11:30:00+00:00",
+    "totalLaps": 63
+  },
+  {
+    "slug": "japanese-grand-prix",
+    "fileName": "japanese-grand-prix.json",
+    "meeting_key": 1256,
+    "meeting_name": "Japanese Grand Prix",
+    "location": "Suzuka",
+    "country_name": "Japan",
+    "circuit_short_name": "Suzuka",
+    "date_start": "2025-04-04T02:30:00+00:00",
+    "totalLaps": 53
+  },
+  {
+    "slug": "miami-grand-prix",
+    "fileName": "miami-grand-prix.json",
+    "meeting_key": 1259,
+    "meeting_name": "Miami Grand Prix",
+    "location": "Miami Gardens",
+    "country_name": "United States",
+    "circuit_short_name": "Miami",
+    "date_start": "2025-05-02T16:30:00+00:00",
+    "totalLaps": 57
+  },
+  {
+    "slug": "monaco-grand-prix",
+    "fileName": "monaco-grand-prix.json",
+    "meeting_key": 1261,
+    "meeting_name": "Monaco Grand Prix",
+    "location": "Monaco",
+    "country_name": "Monaco",
+    "circuit_short_name": "Monte Carlo",
+    "date_start": "2025-05-23T11:30:00+00:00",
+    "totalLaps": 78
+  },
+  {
+    "slug": "saudi-arabian-grand-prix",
+    "fileName": "saudi-arabian-grand-prix.json",
+    "meeting_key": 1258,
+    "meeting_name": "Saudi Arabian Grand Prix",
+    "location": "Jeddah",
+    "country_name": "Saudi Arabia",
+    "circuit_short_name": "Jeddah",
+    "date_start": "2025-04-18T13:30:00+00:00",
+    "totalLaps": 50
+  },
+  {
+    "slug": "spanish-grand-prix",
+    "fileName": "spanish-grand-prix.json",
+    "meeting_key": 1262,
+    "meeting_name": "Spanish Grand Prix",
+    "location": "Barcelona",
+    "country_name": "Spain",
+    "circuit_short_name": "Catalunya",
+    "date_start": "2025-05-30T11:30:00+00:00",
+    "totalLaps": 0
+  }
+]
