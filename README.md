@@ -1,6 +1,7 @@
 # F1 Race Replay
 
 A web-based Formula 1 race replay viewer built with React and Three.js. Watch real 2025 season races play out on a 2D track map with actual driver position data from the OpenF1 API.
+<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/11bf22b9-8e62-45a3-9a19-b15adc73b63c" />
 
 ## What it does
 
@@ -13,6 +14,7 @@ A web-based Formula 1 race replay viewer built with React and Three.js. Watch re
 ### Races included
 
 Australian GP, Bahrain GP, Saudi Arabian GP, Japanese GP, Chinese GP, Miami GP, Emilia Romagna GP, Monaco GP, Spanish GP
+<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/62622c87-ac67-4fc3-8ce2-4a68968f5339" />
 
 ## Tech stack
 
